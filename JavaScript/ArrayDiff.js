@@ -29,7 +29,7 @@ function showResult() {
         { a: [1, 2, 3], b: [1, 2] },
     ];
 
-    array.forEach((element, index) => {
+    array.forEach((element) => {
         const result = arrayDiff(element.a, element.b)
         const p = document.createElement('p');
         p.textContent = `The Array that contents A ${JSON.stringify(element.a)} and B ${JSON.stringify(element.b)} this is the result ${JSON.stringify(result)}`;
