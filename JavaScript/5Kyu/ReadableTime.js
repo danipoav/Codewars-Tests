@@ -23,6 +23,9 @@ function convert(num) {
     let minutes = Math.floor((num % 3600) / 60);
     let secs = num % 60;
 
-    return `Time converted: ${hours}:${minutes}:${secs}`;
+    let formattedHours = String(hours).padStart(2, '0');
+    let formattedMinutes = String(minutes).padStart(2, '0');
+    let formattedSeconds = String(secs).padStart(2, '0');
 
+    return `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
 }
